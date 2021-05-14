@@ -14,7 +14,46 @@ body {
   --accent-color: #2196f3;
   --main-color: #212121;
 }
+/*=========GEOMETRIC========*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
 /*========HEADER=======*/
+.header {
+  border: 1px solid #ececec;
+}
+
+.container {
+  display: flex;
+  width: 1170px;
+  margin: 0px 215px;
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -22,6 +61,9 @@ body {
   line-height: 1.19;
   text-decoration: none;
   color: var(--accent-color);
+
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo2 {
@@ -61,12 +103,46 @@ body {
   color: var(--accent-color);
 }
 
+.navigation {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  margin-left: 93px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.menu .menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-contacts {
+  display: flex;
+  margin-left: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.menu-contacts .menu-contacts-list:last-child {
+  margin-left: 50px;
+}
 /*=========HERO=========*/
 .hero {
+  margin-top: 0px;
+  width: 1600px;
+  height: 600px;
+  display: block;
   background-color: #2f303a;
+  text-align: center;
 }
 
 .hero-title {
+  display: flex;
+  padding-top: 200px;
+  margin-left: 452px;
+  margin-right: 452px;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -76,21 +152,32 @@ body {
   color: #ffffff;
 }
 .modal-bth {
+  text-align: center;
+  padding: 10px 32px;
+
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
+  border-radius: 4px;
   color: #ffffff;
   cursor: pointer;
 }
+
 /*========Our presentaition=======*/
+.about-us-list {
+  display: flex;
+  margin-top: 94px;
+}
+.about-us-list .about-us-item:not(last-child) {
+  margin-right: 30px;
+}
 .suptitle {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -105,7 +192,13 @@ body {
   color: #757575;
 }
 /*========Our work===========*/
+.container-work {
+  display: block;
+}
 .title-h2 {
+  margin-top: 94px;
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -113,7 +206,39 @@ body {
   color: var(--main-color);
 }
 
+.our-work-list {
+  display: flex;
+}
+.our-work-item {
+  margin-right: 30px;
+}
+/*=========OUR-TEAM======*/
+.our-team {
+  background-color: #f5f4fa;
+}
+.container-team {
+  display: block;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.title-h2-team {
+  padding-top: 94px;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--main-color);
+}
+
+.our-team-list {
+  display: flex;
+  justify-content: space-between;
+}
 .title-h3 {
+  padding-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
@@ -122,18 +247,33 @@ body {
 }
 
 .our-team-description {
+  margin-top: 10px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
   color: #757575;
 }
+
+.card-team {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 /*==========FOOTER=======*/
+.container-footer {
+  display: block;
+}
 .footer {
   font-family: 'Roboto', sans-serif;
   background-color: #2f303a;
 }
 .footer-logo {
+  display: block;
+  padding-top: 60px;
+  margin-right: auto;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -152,10 +292,16 @@ body {
 }
 
 .footer-address {
+  margin-top: 20px;
+  padding-bottom: 60px;
+
   font-style: normal;
   font-weight: 400;
 }
 
+.footer-list .footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .footer-link-map {
   font-size: 14px;
   line-height: 1.71;
@@ -176,7 +322,21 @@ body {
 }
 
 /*=====PORTFOLIO MENU=======*/
+.container-portfolio {
+  display: block;
+  padding-top: 94px;
+}
+.menu-portfolio-list {
+  display: flex;
+  justify-content: center;
+}
+.menu-portfolio-list .menu-portfolio-link:not(:last-child) {
+  margin-right: 8px;
+}
+
 .bth-menu {
+  padding: 6px 22px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -185,6 +345,10 @@ body {
   background: #f5f4fa;
   border-radius: 4px;
   color: var(--main-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .bth-menu:focus,
 .bth-menu:hover {
@@ -192,7 +356,35 @@ body {
   color: #ffffff;
 }
 /*========PORTFOLIO HERO=======*/
+.hero-portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.hero-portfolio-link {
+  flex-basis: calc((100%-90) / 3);
+  margin-top: 30px;
+}
+.hero-portfolio-list:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.portfolio-card {
+  display: block;
+  width: 370px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+.portfolio-card:nth-child(3n) {
+  margin-right: 0px;
+}
+
 .title-h3-portfolio {
+  margin-top: 20px;
+  margin-left: 24px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -201,6 +393,10 @@ body {
 }
 
 .portfolio-description {
+  margin-top: 8px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
@@ -210,6 +406,8 @@ body {
 /*=====PORTFOLIO FOOTER======*/
 
 .portfolio-footer {
+  margin-top: 94px;
+
   background-color: #2f303a;
 }
 .portfolio-footer-link-map {
@@ -223,42 +421,10 @@ body {
 }
 
 .portfolio-footer-link {
-  font-family: 'Roboto' sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-
-/*=========GEOMETRIC========*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-}
-
-img {
-  display: block;
 }
