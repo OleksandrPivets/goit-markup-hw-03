@@ -49,9 +49,9 @@ img {
   border: 1px solid #ececec;
 }
 
-.container {
+.section {
   display: flex;
-  width: 1170px;
+  width: 1200px;
   margin: 0px 215px;
 }
 .logo {
@@ -222,7 +222,6 @@ img {
   padding-bottom: 94px;
 }
 .title-h2-team {
-  padding-top: 94px;
   margin-bottom: 50px;
 
   font-weight: 700;
