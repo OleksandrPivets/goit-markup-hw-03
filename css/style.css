@@ -52,7 +52,18 @@ img {
 .section {
   display: flex;
   width: 1200px;
-  margin: 0px 215px;
+  margin: 0px auto;
+}
+
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0px auto;
+  align-items: center;
+}
+
+.header .container {
+  display: flex;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -105,13 +116,12 @@ img {
 
 .navigation {
   display: flex;
+  align-items: center;
 }
 
 .menu {
   display: flex;
   margin-left: 93px;
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 .menu .menu-item:not(:last-child) {
   margin-right: 50px;
@@ -120,28 +130,23 @@ img {
 .menu-contacts {
   display: flex;
   margin-left: auto;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  align-items: center;
 }
 .menu-contacts .menu-contacts-list:last-child {
   margin-left: 50px;
 }
 /*=========HERO=========*/
 .hero {
-  margin-top: 0px;
   width: 1600px;
-  height: 600px;
-  display: block;
   background-color: #2f303a;
   text-align: center;
+  padding: 200px 0px;
 }
 
 .hero-title {
-  display: flex;
-  padding-top: 200px;
-  margin-left: 452px;
-  margin-right: 452px;
+  margin: 0px auto;
   margin-bottom: 30px;
+  max-width: 696px;
 
   font-weight: 900;
   font-size: 44px;
@@ -168,9 +173,11 @@ img {
 }
 
 /*========Our presentaition=======*/
+.about-us {
+  padding-top: 94px;
+}
 .about-us-list {
   display: flex;
-  margin-top: 94px;
 }
 .about-us-list .about-us-item:not(last-child) {
   margin-right: 30px;
@@ -192,11 +199,10 @@ img {
   color: #757575;
 }
 /*========Our work===========*/
-.container-work {
-  display: block;
+.our-work {
+  padding-top: 94px;
 }
 .title-h2 {
-  margin-top: 94px;
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -209,18 +215,16 @@ img {
 .our-work-list {
   display: flex;
 }
-.our-work-item {
+.our-work-item:not(:last-child) {
   margin-right: 30px;
 }
 /*=========OUR-TEAM======*/
 .our-team {
   background-color: #f5f4fa;
-}
-.container-team {
-  display: block;
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .title-h2-team {
   margin-bottom: 50px;
 
@@ -233,7 +237,9 @@ img {
 
 .our-team-list {
   display: flex;
-  justify-content: space-between;
+}
+.our-team-item:not(:last-child) {
+  margin-right: 30px;
 }
 .title-h3 {
   padding-top: 30px;
