@@ -267,9 +267,7 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 /*==========FOOTER=======*/
-.container-footer {
-  display: block;
-}
+
 .footer {
   font-family: 'Roboto', sans-serif;
   background-color: #2f303a;
@@ -327,7 +325,7 @@ img {
 }
 
 /*=====PORTFOLIO MENU=======*/
-.container-portfolio {
+.menu-portfolio {
   display: block;
   padding-top: 94px;
 }
