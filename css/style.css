@@ -328,6 +328,7 @@ img {
 .menu-portfolio {
   display: block;
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .menu-portfolio-list {
   display: flex;
@@ -409,8 +410,6 @@ img {
 /*=====PORTFOLIO FOOTER======*/
 
 .portfolio-footer {
-  margin-top: 94px;
-
   background-color: #2f303a;
 }
 .portfolio-footer-link-map {
