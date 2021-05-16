@@ -371,8 +371,6 @@ img {
 .hero-portfolio-link {
   flex-basis: calc((100% - 90px) / 3);
   margin-top: 30px;
-  border: 1px solid #eeeeee;
-  border-top: none;
 }
 .hero-portfolio-list:nth-child(3n) {
   margin-right: 0px;
@@ -384,8 +382,9 @@ img {
 
 .portfolio-card {
   display: block;
-  width: 370px;
   background: #ffffff;
+  border-top: none;
+  border: 1px solid #eeeeee;
 }
 .portfolio-card:nth-child(3n) {
   margin-right: 0px;
@@ -403,7 +402,7 @@ img {
 }
 
 .portfolio-description {
-  margin-top: 8px;
+  margin-top: 4px;
   margin-left: 24px;
   margin-bottom: 20px;
 
