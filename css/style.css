@@ -59,7 +59,6 @@ img {
   width: 1200px;
   padding: 0px 15px;
   margin: 0px auto;
-  align-items: center;
 }
 
 .header .container {
@@ -179,7 +178,7 @@ img {
 .about-us-list {
   display: flex;
 }
-.about-us-list .about-us-item:not(last-child) {
+.about-us-list .about-us-item:not(:last-child) {
   margin-right: 30px;
 }
 .suptitle {
@@ -238,12 +237,15 @@ img {
 .our-team-list {
   display: flex;
 }
+.our-team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .our-team-item:not(:last-child) {
   margin-right: 30px;
 }
 .title-h3 {
-  padding-top: 30px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
@@ -262,19 +264,18 @@ img {
 }
 
 .card-team {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  margin: 30px 32px;
 }
 /*==========FOOTER=======*/
 
 .footer {
   font-family: 'Roboto', sans-serif;
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   display: block;
-  padding-top: 60px;
   margin-right: auto;
 
   font-family: 'Raleway', sans-serif;
@@ -296,7 +297,6 @@ img {
 
 .footer-address {
   margin-top: 20px;
-  padding-bottom: 60px;
 
   font-style: normal;
   font-weight: 400;
@@ -333,6 +333,7 @@ img {
 .menu-portfolio-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .menu-portfolio-list .menu-portfolio-link:not(:last-child) {
   margin-right: 8px;
@@ -363,23 +364,28 @@ img {
 .hero-portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .hero-portfolio-link {
-  flex-basis: calc((100%-90) / 3);
+  flex-basis: calc((100% - 90px) / 3);
   margin-top: 30px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 .hero-portfolio-list:nth-child(3n) {
   margin-right: 0px;
+}
+
+.hero-portfolio-link:not(:nth-child(3n-2)) {
+  margin-left: 30px;
 }
 
 .portfolio-card {
   display: block;
   width: 370px;
   background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
 }
 .portfolio-card:nth-child(3n) {
   margin-right: 0px;
