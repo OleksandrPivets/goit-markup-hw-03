@@ -264,7 +264,7 @@ img {
 }
 
 .card-team {
-  margin: 30px 32px;
+  padding: 30px 32px;
 }
 /*==========FOOTER=======*/
 
@@ -381,19 +381,15 @@ img {
 }
 
 .portfolio-card {
-  display: block;
-  background: #ffffff;
   border-top: none;
   border: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
 .portfolio-card:nth-child(3n) {
   margin-right: 0px;
 }
 
 .title-h3-portfolio {
-  margin-top: 20px;
-  margin-left: 24px;
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -403,8 +399,6 @@ img {
 
 .portfolio-description {
   margin-top: 4px;
-  margin-left: 24px;
-  margin-bottom: 20px;
 
   font-weight: 400;
   font-size: 16px;
