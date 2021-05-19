@@ -105,6 +105,10 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
 }
+.menu-contacts-link::before {
+  content: '';
+  background-image: url(../images/mail.png);
+}
 
 .menu-contacts-link:hover,
 .menu-contacts-link:focus {
